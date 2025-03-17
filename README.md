@@ -4,6 +4,7 @@ a repo for roake_xmatepro7 robot manipulation based on rokae_imitation and movei
 1.首先安装对应版本的ros组件
 编译
 ```
+rm -rf build/*
 catkin_make clean
 catkin_make
 ```
