@@ -1,0 +1,39 @@
+[I|2025-03-14 11:27:58.725 5938] uid: b45020b8-840c | Connect to 192.168.0.160 from 192.168.0.100
+[I|2025-03-14 11:27:58.726 5938] uid: b45020b8-840c | setRtNetworkTolerance end, percent: 10% (0)
+[I|2025-03-14 11:27:58.768 5938] uid: b45020b8-840c | setOperationMode end, switch to auto (0)
+[I|2025-03-14 11:27:59.113 5938] uid: b45020b8-840c | setMotionControlMode end, mode: RtCommand (0)
+[I|2025-03-14 11:27:59.114 5938] uid: b45020b8-840c | setPowerState end, switch motor true (0)
+[I|2025-03-14 11:27:59.116 5938] uid: b45020b8-840c | setEndEffectorFrame [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0.25, 0, 0, 0, 1] (0)
+[I|2025-03-14 11:27:59.117 5938] uid: b45020b8-840c | setFilterFrequency 25 25 52 (0)
+[I|2025-03-14 11:27:59.117 5938] uid: b45020b8-840c | setCollisionBehaviour [16, 16, 8, 8, 4, 4, 4] (0)
+[I|2025-03-14 11:27:59.118 5938] uid: b45020b8-840c | Exec RT MoveJ 0.3 [6.636264541341202e-05, 0.5238626782175688, -1.7496968361820594e-05, 1.04726857770287, 1.1984224905356572e-05, 1.5708320397851145, 1.9414444346677645e-05] [0, 0.5235987755982988, 0, 1.0471975511965976, 0, 1.5707963267948966, 0]
+[I|2025-03-14 11:27:59.168 5938] uid: b45020b8-840c | RtControlT startMove jointPosition
+[I|2025-03-14 11:27:59.169 5938] uid: b45020b8-840c | exec startLoop true
+[I|2025-03-14 11:27:59.660 5938] uid: b45020b8-840c | RtControlT startMove cartesianPosition
+[I|2025-03-14 11:27:59.763 5938] uid: b45020b8-840c | exec startLoop false
+[I|2025-03-14 11:28:12.669 6039] uid: b45020b8-840c | Connect to 192.168.0.160 from 192.168.0.100
+[I|2025-03-14 11:28:12.670 6039] uid: b45020b8-840c | setRtNetworkTolerance end, percent: 10% (0)
+[I|2025-03-14 11:28:12.717 6039] uid: b45020b8-840c | setOperationMode end, switch to auto (0)
+[I|2025-03-14 11:28:13.061 6039] uid: b45020b8-840c | setMotionControlMode end, mode: RtCommand (0)
+[I|2025-03-14 11:28:13.063 6039] uid: b45020b8-840c | setPowerState end, switch motor true (0)
+[I|2025-03-14 11:28:13.064 6039] uid: b45020b8-840c | setEndEffectorFrame [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0.25, 0, 0, 0, 1] (0)
+[I|2025-03-14 11:28:13.065 6039] uid: b45020b8-840c | setFilterFrequency 25 25 52 (0)
+[I|2025-03-14 11:28:13.065 6039] uid: b45020b8-840c | setCollisionBehaviour [16, 16, 8, 8, 4, 4, 4] (0)
+[I|2025-03-14 11:28:13.066 6039] uid: b45020b8-840c | Exec RT MoveJ 0.3 [5.063335022513152e-05, 0.5234285496703723, -7.669903939428207e-06, 1.046979757882651, 2.876213977285577e-06, 1.5707716392915916, 2.0373182339106172e-05] [0, 0.5235987755982988, 0, 1.0471975511965976, 0, 1.5707963267948966, 0]
+[I|2025-03-14 11:28:13.116 6039] uid: b45020b8-840c | RtControlT startMove jointPosition
+[I|2025-03-14 11:28:13.117 6039] uid: b45020b8-840c | exec startLoop true
+[I|2025-03-14 11:28:13.608 6039] uid: b45020b8-840c | RtControlT startMove jointPosition
+[I|2025-03-14 11:28:13.710 6039] uid: b45020b8-840c | exec startLoop false
+[I|2025-03-14 11:30:58.629 10787] uid: b45020b8-840c | Connect to 192.168.0.160 from 192.168.0.100
+[I|2025-03-14 11:30:58.630 10787] uid: b45020b8-840c | setRtNetworkTolerance end, percent: 10% (0)
+[I|2025-03-14 11:30:58.672 10787] uid: b45020b8-840c | setOperationMode end, switch to auto (0)
+[I|2025-03-14 11:30:59.020 10787] uid: b45020b8-840c | setMotionControlMode end, mode: RtCommand (0)
+[I|2025-03-14 11:30:59.030 10787] uid: b45020b8-840c | setPowerState end, switch motor true (0)
+[I|2025-03-14 11:30:59.031 10787] uid: b45020b8-840c | setEndEffectorFrame [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0.25, 0, 0, 0, 1] (0)
+[I|2025-03-14 11:30:59.032 10787] uid: b45020b8-840c | setFilterFrequency 25 25 52 (0)
+[I|2025-03-14 11:30:59.032 10787] uid: b45020b8-840c | setCollisionBehaviour [16, 16, 8, 8, 4, 4, 4] (0)
+[I|2025-03-14 11:30:59.032 10787] uid: b45020b8-840c | Exec RT MoveJ 0.3 [5.392901207410457e-05, 0.5235187309627851, -7.430219441321074e-06, 1.047174621379612, 3.115898475392709e-06, 1.5707874584684667, 1.989381334289191e-05] [0, 0.5235987755982988, 0, 1.0471975511965976, 0, 1.5707963267948966, 0]
+[I|2025-03-14 11:30:59.088 10787] uid: b45020b8-840c | RtControlT startMove jointPosition
+[I|2025-03-14 11:30:59.088 10787] uid: b45020b8-840c | exec startLoop true
+[I|2025-03-14 11:30:59.560 10787] uid: b45020b8-840c | RtControlT startMove jointPosition
+[I|2025-03-14 11:30:59.662 10787] uid: b45020b8-840c | exec startLoop false

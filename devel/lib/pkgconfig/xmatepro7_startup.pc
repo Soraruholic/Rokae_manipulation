@@ -1,0 +1,8 @@
+prefix=/home/vector/workspace/rokae_ws/devel
+
+Name: xmatepro7_startup
+Description: Description of xmatepro7_startup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

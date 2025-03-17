@@ -1,0 +1,9 @@
+/home/vector/workspace/rokae_ws/install/_setup_util.py
+/home/vector/workspace/rokae_ws/install/env.sh
+/home/vector/workspace/rokae_ws/install/setup.bash
+/home/vector/workspace/rokae_ws/install/local_setup.bash
+/home/vector/workspace/rokae_ws/install/setup.sh
+/home/vector/workspace/rokae_ws/install/local_setup.sh
+/home/vector/workspace/rokae_ws/install/setup.zsh
+/home/vector/workspace/rokae_ws/install/local_setup.zsh
+/home/vector/workspace/rokae_ws/install/.rosinstall

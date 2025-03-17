@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <include file="$(dirname)/xmatepro7_bringup.launch" />
+
+<!--    <include file="$(dirname)/dh_ros_driver.launch" />-->
+
+    <!-- <include file="$(dirname)/er7pro_driver.launch" /> -->
+
+
+</launch>

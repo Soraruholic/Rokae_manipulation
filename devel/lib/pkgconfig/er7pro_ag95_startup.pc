@@ -1,0 +1,8 @@
+prefix=/home/vector/workspace/rokae_ws/devel
+
+Name: er7pro_ag95_startup
+Description: Description of er7pro_ag95_startup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

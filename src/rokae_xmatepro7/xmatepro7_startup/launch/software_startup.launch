@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+    <include file="$(dirname)/xmatepro7_planning_execution.launch" />
+
+    <!--<include file="$(dirname)/dh_ros_controller.launch" />-->
+
+
+    <!-- <include file="$(find rokae_xmatepro7_moveit_config)/launch/move_group.launch">
+    </include> -->
+    <!-- <include file="$(find rokae_xmatepro7_moveit_config)/launch/moveit_rviz.launch">
+    </include>    -->
+
+
+</launch>

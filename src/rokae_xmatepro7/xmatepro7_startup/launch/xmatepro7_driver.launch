@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<launch>    
+    <!-- 启动硬件驱动前需要先 加载机械臂的controller -->
+    <arg name="robot_ip" doc="IP address of the robot server (remote)." default="192.168.0.160"/>
+    <arg name="local_ip" doc="IP address of the workstation PC (local)." default="192.168.0.100"/>
+    <!-- <arg name="controllers_file" default="$(find xmatepro7_startup)/config/xMate_controllers.yaml" doc="YAML file with the controllers configuration."/>  -->
+    <!-- <arg name="controllers" default="joint_state_controller position_joint_trajectory_controller" />  -->
+    
+    <!-- Load controller settings -->
+    <!-- <rosparam command="load" file="$(arg controllers_file)" subst_value="true" />      -->
+    <!-- Load hardware interface -->
+    <node name="rokae_hardware" pkg="rokae_hardware" type="rokae_hardware" output="screen" respawn="false">
+        <param name="robot_ip" type="str" value="$(arg robot_ip)"/>
+        <param name="local_ip" type="str" value="$(arg local_ip)"/>
+    </node>  
+
+    <!-- Load controller settings -->
+    <!-- <rosparam command="load" file="$(arg controllers_file)" subst_value="true" /> -->
+
+    <!-- Load & start joint_state_controller -->
+    <!-- <node name="ros_control_controller_manager" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="$(arg controllers)" /> -->
+    
+  
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/vector/workspace/rokae_ws/install
+
+Name: er7pro_ag95_moveit_config
+Description: Description of er7pro_ag95_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
