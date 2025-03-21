@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/vector/workspace/rokae_ws/src
-# Build directory: /home/vector/workspace/rokae_ws/build
+# Source directory: /home/icrlab/rokae_ws/src
+# Build directory: /home/icrlab/rokae_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

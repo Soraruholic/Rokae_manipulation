@@ -1,3 +1,0 @@
-roslaunch xmatepro7_startup hardware_startup.launch 
-roslaunch xmatepro7_startup xmatepro7_driver.launch 
-roslaunch xmatepro7_startup software_startup.launch 

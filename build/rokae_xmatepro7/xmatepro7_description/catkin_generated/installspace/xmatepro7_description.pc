@@ -1,4 +1,4 @@
-prefix=/home/vector/workspace/rokae_ws/install
+prefix=/home/icrlab/rokae_ws/install
 
 Name: xmatepro7_description
 Description: Description of xmatepro7_description

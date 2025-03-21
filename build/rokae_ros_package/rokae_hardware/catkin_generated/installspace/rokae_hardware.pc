@@ -1,4 +1,4 @@
-prefix=/home/vector/workspace/rokae_ws/install
+prefix=/home/icrlab/rokae_ws/install
 
 Name: rokae_hardware
 Description: Description of rokae_hardware

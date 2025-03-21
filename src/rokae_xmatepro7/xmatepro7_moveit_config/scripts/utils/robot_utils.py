@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.spatial.transform import Rotation as R
+from scipy.interpolate import CubicSpline
 import geometry_msgs.msg
 def cal_transformation_matrix(start, end):
     """
@@ -94,3 +95,24 @@ def interpolate_points(points, max_diff=0.00022):
         interpolated.append(next_p)
     
     return interpolated
+
+def cubic_spline(points,time_step, dt=0.001):
+    # 假设有7个关节的轨迹点数据
+    # 每个关节的轨迹点数量为n，时间间隔为0.001秒
+    # 例如：5个时间点，每个时间点对应7个关节的角度
+    points = np.asarray(points)
+    joint_trajectories = points.T
+    
+    interpolated_trajectories = []
+    # 对每个关节进行样条插值
+    for i in range(7):
+        cs = CubicSpline(time_step, joint_trajectories[i])
+        # 生成新的时间戳
+        new_timestamps = np.arange(time_step[0], time_step[-1], dt)
+        # 计算插值
+        interpolated_positions = cs(new_timestamps)
+        interpolated_trajectories.append(interpolated_positions)
+
+    interpolated_trajectories = np.asarray(interpolated_trajectories).T
+
+    return np.asarray(interpolated_trajectories), new_timestamps

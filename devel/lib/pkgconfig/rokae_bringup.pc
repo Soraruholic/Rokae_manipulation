@@ -1,4 +1,4 @@
-prefix=/home/vector/workspace/rokae_ws/devel
+prefix=/home/icrlab/rokae_ws/devel
 
 Name: rokae_bringup
 Description: Description of rokae_bringup

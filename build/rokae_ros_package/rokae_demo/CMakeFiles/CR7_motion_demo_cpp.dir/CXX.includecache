@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_demo/src/CR7_motion_demo_cpp.cpp
+/home/icrlab/rokae_ws/src/rokae_ros_package/rokae_demo/src/CR7_motion_demo_cpp.cpp
 moveit/move_group_interface/move_group_interface.h
 -
 moveit/planning_scene_interface/planning_scene_interface.h

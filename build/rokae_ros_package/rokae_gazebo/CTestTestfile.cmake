@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_gazebo
-# Build directory: /home/vector/workspace/rokae_ws/build/rokae_ros_package/rokae_gazebo
+# Source directory: /home/icrlab/rokae_ws/src/rokae_ros_package/rokae_gazebo
+# Build directory: /home/icrlab/rokae_ws/build/rokae_ros_package/rokae_gazebo
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

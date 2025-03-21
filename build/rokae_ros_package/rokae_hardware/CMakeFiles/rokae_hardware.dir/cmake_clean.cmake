@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/vector/workspace/rokae_ws/devel/lib/rokae_hardware/rokae_hardware"
-  "/home/vector/workspace/rokae_ws/devel/lib/rokae_hardware/rokae_hardware.pdb"
+  "/home/icrlab/rokae_ws/devel/lib/rokae_hardware/rokae_hardware"
+  "/home/icrlab/rokae_ws/devel/lib/rokae_hardware/rokae_hardware.pdb"
   "CMakeFiles/rokae_hardware.dir/src/rokae_hardware.cpp.o"
 )
 

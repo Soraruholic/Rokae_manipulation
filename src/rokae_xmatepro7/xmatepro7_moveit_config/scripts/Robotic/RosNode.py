@@ -5,10 +5,9 @@ import rospy
 import moveit_commander
 from moveit_commander import RobotCommander, MoveGroupCommander
 from geometry_msgs.msg import Pose
-import yaml
 from .RobotController import RokaeReceiveInterface
 import numpy as np
-from utils.robot_utils import interpolate_points
+from utils.robot_utils import interpolate_points, cubic_spline
 
 class RosMoveitPlanner:
     def __init__(self):
@@ -28,10 +27,13 @@ class RosMoveitPlanner:
 
     def extract(self, trajectory):
         trajectory_points = []
+        time_step = []
         for point in trajectory.joint_trajectory.points:
             point_data =  point.positions
+            time_data = point.time_from_start.secs + point.time_from_start.nsecs * 1e-9
             trajectory_points.append(point_data)
-        return trajectory_points
+            time_step.append(time_data)
+        return trajectory_points, time_step
 
     def smooth_path(self, trajectory_points):
         for i in range(len(trajectory_points)-1):
@@ -45,7 +47,7 @@ class RosMoveitPlanner:
         self.move_group.set_joint_value_target(qpos)
         plan = self.move_group.plan()
 
-        traj_points= self.extract(plan[1])
+        traj_points, time_step= self.extract(plan[1])
         
         if plan[0]:
             return self.smooth_path(traj_points)
@@ -68,10 +70,12 @@ class RosMoveitPlanner:
         self.move_group.set_pose_target(target_pose)
         plan = self.move_group.plan()
         
-        traj_points= self.extract(plan[1])
+        traj_points, time_step= self.extract(plan[1])
         
         if plan[0]:
-            return self.smooth_path(traj_points)
+            traj = cubic_spline(traj_points, time_step)[0]
+            # return self.smooth_path(traj_points)
+            return traj.tolist()
         return False
 
 from sensor_msgs.msg import JointState

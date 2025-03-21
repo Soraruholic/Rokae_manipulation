@@ -1,8 +1,8 @@
-# Install script for directory: /home/vector/workspace/rokae_ws/src/rokae_xmatepro7/xmatepro7_description
+# Install script for directory: /home/icrlab/rokae_ws/src/rokae_xmatepro7/xmatepro7_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vector/workspace/rokae_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/icrlab/rokae_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vector/workspace/rokae_ws/build/rokae_xmatepro7/xmatepro7_description/catkin_generated/installspace/xmatepro7_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/icrlab/rokae_ws/build/rokae_xmatepro7/xmatepro7_description/catkin_generated/installspace/xmatepro7_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xmatepro7_description/cmake" TYPE FILE FILES
-    "/home/vector/workspace/rokae_ws/build/rokae_xmatepro7/xmatepro7_description/catkin_generated/installspace/xmatepro7_descriptionConfig.cmake"
-    "/home/vector/workspace/rokae_ws/build/rokae_xmatepro7/xmatepro7_description/catkin_generated/installspace/xmatepro7_descriptionConfig-version.cmake"
+    "/home/icrlab/rokae_ws/build/rokae_xmatepro7/xmatepro7_description/catkin_generated/installspace/xmatepro7_descriptionConfig.cmake"
+    "/home/icrlab/rokae_ws/build/rokae_xmatepro7/xmatepro7_description/catkin_generated/installspace/xmatepro7_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xmatepro7_description" TYPE FILE FILES "/home/vector/workspace/rokae_ws/src/rokae_xmatepro7/xmatepro7_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xmatepro7_description" TYPE FILE FILES "/home/icrlab/rokae_ws/src/rokae_xmatepro7/xmatepro7_description/package.xml")
 endif()
 

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/vector/workspace/rokae_ws/devel/include/rokae_msgs/ExternalForce.h"
-  "/home/vector/workspace/rokae_ws/devel/include/rokae_msgs/JointPosVel.h"
-  "/home/vector/workspace/rokae_ws/devel/include/rokae_msgs/RobotMode.h"
-  "/home/vector/workspace/rokae_ws/devel/include/rokae_msgs/RobotState.h"
+  "/home/icrlab/rokae_ws/devel/include/rokae_msgs/ExternalForce.h"
+  "/home/icrlab/rokae_ws/devel/include/rokae_msgs/JointPosVel.h"
+  "/home/icrlab/rokae_ws/devel/include/rokae_msgs/RobotMode.h"
+  "/home/icrlab/rokae_ws/devel/include/rokae_msgs/RobotState.h"
   "CMakeFiles/rokae_msgs_generate_messages_cpp"
 )
 

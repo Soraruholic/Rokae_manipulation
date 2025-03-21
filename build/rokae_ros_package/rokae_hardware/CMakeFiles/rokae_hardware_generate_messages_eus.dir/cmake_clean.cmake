@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/vector/workspace/rokae_ws/devel/share/roseus/ros/rokae_hardware/manifest.l"
+  "/home/icrlab/rokae_ws/devel/share/roseus/ros/rokae_hardware/manifest.l"
   "CMakeFiles/rokae_hardware_generate_messages_eus"
 )
 

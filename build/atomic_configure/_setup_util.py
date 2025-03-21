@@ -1,4 +1,4 @@
-#!/home/vector/.pyenv/shims/python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 # Software License Agreement (BSD License)
@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/vector/catkin_realsense/devel;/home/vector/embodied_ai_ws/devel;/home/vector/catkin_ws_test/devel;/opt/ros/noetic'.split(';')
+            CMAKE_PREFIX_PATH = r'/opt/ros/noetic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

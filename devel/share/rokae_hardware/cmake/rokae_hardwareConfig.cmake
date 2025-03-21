@@ -67,14 +67,14 @@ set(rokae_hardware_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(rokae_hardware_SOURCE_PREFIX /home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_hardware)
-  set(rokae_hardware_DEVEL_PREFIX /home/vector/workspace/rokae_ws/devel)
+  set(rokae_hardware_SOURCE_PREFIX /home/icrlab/rokae_ws/src/rokae_ros_package/rokae_hardware)
+  set(rokae_hardware_DEVEL_PREFIX /home/icrlab/rokae_ws/devel)
   set(rokae_hardware_INSTALL_PREFIX "")
   set(rokae_hardware_PREFIX ${rokae_hardware_DEVEL_PREFIX})
 else()
   set(rokae_hardware_SOURCE_PREFIX "")
   set(rokae_hardware_DEVEL_PREFIX "")
-  set(rokae_hardware_INSTALL_PREFIX /home/vector/workspace/rokae_ws/install)
+  set(rokae_hardware_INSTALL_PREFIX /home/icrlab/rokae_ws/install)
   set(rokae_hardware_PREFIX ${rokae_hardware_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(rokae_hardware_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_hardware/include " STREQUAL " ")
+if(NOT "/home/icrlab/rokae_ws/src/rokae_ros_package/rokae_hardware/include " STREQUAL " ")
   set(rokae_hardware_INCLUDE_DIRS "")
-  set(_include_dirs "/home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_hardware/include")
+  set(_include_dirs "/home/icrlab/rokae_ws/src/rokae_ros_package/rokae_hardware/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_hardware/inc
         message(FATAL_ERROR "Project 'rokae_hardware' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'rokae_hardware' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_hardware/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'rokae_hardware' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/icrlab/rokae_ws/src/rokae_ros_package/rokae_hardware/${idir}'.  ${_report}")
     endif()
     _list_append_unique(rokae_hardware_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/vector/workspace/rokae_ws/devel/lib;/home/vector/catkin_realsense/devel/lib;/home/vector/embodied_ai_ws/devel/lib;/home/vector/catkin_ws_test/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/icrlab/rokae_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

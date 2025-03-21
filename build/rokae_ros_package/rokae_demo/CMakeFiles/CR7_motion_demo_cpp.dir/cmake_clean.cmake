@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/vector/workspace/rokae_ws/devel/lib/rokae_demo/CR7_motion_demo_cpp"
-  "/home/vector/workspace/rokae_ws/devel/lib/rokae_demo/CR7_motion_demo_cpp.pdb"
+  "/home/icrlab/rokae_ws/devel/lib/rokae_demo/CR7_motion_demo_cpp"
+  "/home/icrlab/rokae_ws/devel/lib/rokae_demo/CR7_motion_demo_cpp.pdb"
   "CMakeFiles/CR7_motion_demo_cpp.dir/src/CR7_motion_demo_cpp.cpp.o"
 )
 

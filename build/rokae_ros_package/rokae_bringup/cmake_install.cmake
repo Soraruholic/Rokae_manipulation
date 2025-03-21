@@ -1,8 +1,8 @@
-# Install script for directory: /home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_bringup
+# Install script for directory: /home/icrlab/rokae_ws/src/rokae_ros_package/rokae_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vector/workspace/rokae_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/icrlab/rokae_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vector/workspace/rokae_ws/build/rokae_ros_package/rokae_bringup/catkin_generated/installspace/rokae_bringup.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/icrlab/rokae_ws/build/rokae_ros_package/rokae_bringup/catkin_generated/installspace/rokae_bringup.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rokae_bringup/cmake" TYPE FILE FILES
-    "/home/vector/workspace/rokae_ws/build/rokae_ros_package/rokae_bringup/catkin_generated/installspace/rokae_bringupConfig.cmake"
-    "/home/vector/workspace/rokae_ws/build/rokae_ros_package/rokae_bringup/catkin_generated/installspace/rokae_bringupConfig-version.cmake"
+    "/home/icrlab/rokae_ws/build/rokae_ros_package/rokae_bringup/catkin_generated/installspace/rokae_bringupConfig.cmake"
+    "/home/icrlab/rokae_ws/build/rokae_ros_package/rokae_bringup/catkin_generated/installspace/rokae_bringupConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rokae_bringup" TYPE FILE FILES "/home/vector/workspace/rokae_ws/src/rokae_ros_package/rokae_bringup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rokae_bringup" TYPE FILE FILES "/home/icrlab/rokae_ws/src/rokae_ros_package/rokae_bringup/package.xml")
 endif()
 

@@ -9,6 +9,14 @@ robot = RokaexMatePro7()
 planner = RosMoveitPlanner()
 env = BaseEnv(robot=robot, motion_planner=planner)
 env.reset()
+
+'''
+if pose is x,y,z,rx,ry,rz, as euler angle, use tcp_pose_trans() to quat ,then move
+if pose is x,y,z, wx,wy,wz,ww, as quat , it can be use directly without trans
+env.movep() input should be quat
+euler 3.14155060e+00, -1.94625667e-04,  3.14155505e+00 is gripper down rotation
+'''
+
 pose = np.array([0.57,  0.2316,  0.85593, 0.456897, -0.515897,  0.614818,-0.383528])
 pose2 = np.array([0.4,  0.15,  0.5,  3.14155060e+00, -1.94625667e-04,  3.14155505e+00])
 pose3 = np.array([0.5,  0.0,  0.5,  3.14155060e+00, -1.94625667e-04,  3.14155505e+00])

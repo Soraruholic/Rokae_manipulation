@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/vector/workspace/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/ExternalForce.js"
-  "/home/vector/workspace/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/JointPosVel.js"
-  "/home/vector/workspace/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/RobotMode.js"
-  "/home/vector/workspace/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/RobotState.js"
+  "/home/icrlab/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/ExternalForce.js"
+  "/home/icrlab/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/JointPosVel.js"
+  "/home/icrlab/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/RobotMode.js"
+  "/home/icrlab/rokae_ws/devel/share/gennodejs/ros/rokae_msgs/msg/RobotState.js"
   "CMakeFiles/rokae_msgs_generate_messages_nodejs"
 )
 
