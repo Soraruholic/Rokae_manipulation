@@ -24,8 +24,11 @@ class BaseEnv:
                 msg = {
                     "joint_position": list(traj)
                 }
+                timestep = time.time()
                 self.robot.send_cmd(msg)
-                time.sleep(0.00099)
+                transtime = (time.time() - timestep)
+                sleep_time = max(0.001-transtime, 0)
+                time.sleep(sleep_time)
 
     def movej(self, target_qpos):
         '''
@@ -38,10 +41,13 @@ class BaseEnv:
                 msg = {
                     "joint_position": list(traj)
                 }
+                timestep = time.time()
                 self.robot.send_cmd(msg)
-                time.sleep(0.00099)
+                transtime = (time.time() - timestep)
+                sleep_time = max(0.001-transtime, 0)
+                time.sleep(sleep_time)
     
-    def gripper_control(self, width, frequency=50, threshold=1.5e-2, use_all_control=True):
+    def gripper_control(self, width, frequency=50, threshold=1.5e-2):
         '''
             使用归一化的宽度控制夹爪位置
         '''
@@ -57,10 +63,7 @@ class BaseEnv:
             'gripper_velocity' : gripper_velocity
         }
         while(abs(width-self.robot.gripper_pose)>threshold):
-            if use_all_control:
-                self.robot.send_cmd(msg)
-            else:
-                self.robot.send_cmd(msg)
+            self.robot.send_cmd(msg)
             if gripper_velocity<0 and self.robot.gripper_contact:
                 break
             time.sleep(dt)

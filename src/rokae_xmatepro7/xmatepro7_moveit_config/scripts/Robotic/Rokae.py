@@ -19,7 +19,7 @@ class RokaexMatePro7:
 
     @property
     def pose_home(self):
-        return np.asarray([ -0.82212712,  0.78896482,  1.06670555,  1.22280679, -0.67345472, 1.48878204,  0.15069204])
+        return np.asarray([0, 0.5238, 0, 1.0473, 0, 1.5708, 0.0001])
 
     def get_robot_state(self):
         '''获取机器人和夹爪当前的状态并更新'''

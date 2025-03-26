@@ -35,9 +35,8 @@ class RosMoveitPlanner:
             time_step.append(time_data)
         return trajectory_points, time_step
 
-    def smooth_path(self, trajectory_points):
-        for i in range(len(trajectory_points)-1):
-            path = interpolate_points(points=trajectory_points)
+    def smooth_path(self, trajectory_points, time_step):
+        path = cubic_spline(points=trajectory_points, time_step=time_step)
         return path
 
     def plan_qpos(self, qpos):
@@ -50,7 +49,9 @@ class RosMoveitPlanner:
         traj_points, time_step= self.extract(plan[1])
         
         if plan[0]:
-            return self.smooth_path(traj_points)
+            traj = cubic_spline(traj_points, time_step)[0]
+            # return self.smooth_path(traj_points)
+            return traj.tolist()
         return False
 
     def plan(self, pose):
@@ -71,6 +72,31 @@ class RosMoveitPlanner:
         plan = self.move_group.plan()
         
         traj_points, time_step= self.extract(plan[1])
+        
+        if plan[0]:
+            traj = cubic_spline(traj_points, time_step)[0]
+            # return self.smooth_path(traj_points)
+            return traj.tolist()
+        return False
+
+    def plan_realtime(self, pose, time_step):
+        # 设置目标位姿
+        '''
+            Pose必须是(x,y,z,w)的四元数
+        '''
+        target_pose = Pose()
+        target_pose.position.x = pose[0]
+        target_pose.position.y = pose[1]
+        target_pose.position.z = pose[2]
+        target_pose.orientation.x = pose[3]
+        target_pose.orientation.y = pose[4]
+        target_pose.orientation.z = pose[5]
+        target_pose.orientation.w = pose[6]
+
+        self.move_group.set_pose_target(target_pose)
+        plan = self.move_group.plan()
+        
+        traj_points, _= self.extract(plan[1])
         
         if plan[0]:
             traj = cubic_spline(traj_points, time_step)[0]
